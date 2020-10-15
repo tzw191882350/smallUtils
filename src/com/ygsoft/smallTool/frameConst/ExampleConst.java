@@ -14,6 +14,11 @@ public final class ExampleConst {
      * 字符串转换示例Map.
      */
     public static final Map<String, String[]> STREXAMPLEMAP = new HashMap<String, String[]>();
+    
+    /**
+     * 生成代码转换示例Map.
+     */
+    public static final Map<String, String[]> BUILDCODEEXAMPLEMAP = new HashMap<String, String[]>();
 
     /**
      * "1.将java中sql与plsql中sql进行转换"
@@ -36,8 +41,36 @@ public final class ExampleConst {
                 "ksrq,jsrq,ssxm,sskt,sfkt"
         });
         STREXAMPLEMAP.put("4", new String[]{
-                "案例一:\n\"合同编号\",\n\"合同总金额\",\n\"合同签订项目类型\",\n\"合同收付款类型\",\n---\n案例二:\nfinal String {0} = \"{0}\";\nksrq,jsrq,ssxm,sskt,sfkt",
-                "案例一:\n\"合同编号\",\"合同总金额\",\"合同签订项目类型\",\"合同收付款类型\",\n---\n案例二:\nfinal String ksrq = ksrq;\nfinal String jsrq = jsrq;\nfinal String ssxm = ssxm;\nfinal String sskt = sskt;\nfinal String sfkt = sfkt;"
+        		"案例一:\n"
+                + "\"合同编号\",\n"
+                + "\"合同总金额\",\n"
+                + "\"合同签订项目类型\",\n"
+                + "\"合同收付款类型\",\n"
+                + "---\n"
+                + "案例二:\n"
+                + "final String {0} = \"{0}\";\n"
+                + "ksrq,jsrq,ssxm,sskt,sfkt",
+                
+                "案例一:\n"
+                + "\"合同编号\",\"合同总金额\",\"合同签订项目类型\",\"合同收付款类型\",\n"
+                + "---\n"
+                + "案例二:\n"
+                + "final String ksrq = ksrq;\n"
+                + "final String jsrq = jsrq;\n"
+                + "final String ssxm = ssxm;\n"
+                + "final String sskt = sskt;\n"
+                + "final String sfkt = sfkt;"
+        });
+        BUILDCODEEXAMPLEMAP.put("1", new String[]{
+                "workspacePath: E:\\eclipse6.0\n"
+        		+ "projectPath: \\src\\com\\ygsoft\\gris\\\n"
+                + "groupId: construction\n"
+                + "detailId: bidding\n"
+                + "author: tuzewen\n"
+                + "projectEnglishName: Gccbgj\n"
+                + "projectName: 工程成本归集\n",
+                
+                ""
         });
     }
 
