@@ -42,7 +42,6 @@ public class AbstractQueryControllerFileUtils {
         } catch (final IOException e) {
             e.printStackTrace();
         }
-
         return true;
     }
 
