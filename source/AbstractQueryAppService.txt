@@ -4,7 +4,7 @@ import com.comtop.cap.runtime.base.appservice.CapBaseAppService;
 
 /**
  * 
- * @author zangrihai
+ * @author yourname
  *
  */
 public abstract class abstractname extends CapBaseAppService {

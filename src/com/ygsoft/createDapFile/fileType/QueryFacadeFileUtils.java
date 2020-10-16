@@ -4,14 +4,15 @@ import java.io.File;
 import java.io.IOException;
 import java.util.List;
 
+import com.ygsoft.createDapFile.fileConst.CreateFileConst;
 import org.apache.commons.io.FileUtils;
 
 
 public class QueryFacadeFileUtils {
 	
-	private static final String firstUrl = "E:\\南网云化改造\\filetool\\QueryFacade.txt";
+	private static final String firstUrl = CreateFileConst.getReadfilepath() + "QueryFacade.txt";
 	
-	private static final String modifyUrl = "D:\\develop\\gitCode\\NW_electricity\\com.ygsoft.gris.mapp.std.electricity.app\\src\\main\\java\\cn\\csg\\gmp\\fm\\electricity\\facade\\";
+	private static final String MODIFYURL = CreateFileConst.CREATEFILEPATH;
 	
 	public static void queryFacadeFile(final String contentName) {
     	modifyFileContent(firstUrl, "QueryFacade", contentName);
@@ -23,7 +24,7 @@ public class QueryFacadeFileUtils {
     public static boolean modifyFileContent(final File file, final String sufstr, final String newStr) {
         List<String> list = null;
         try {
-        	final File newFile = new File(modifyUrl + newStr + sufstr + ".java");
+        	final File newFile = new File(MODIFYURL + newStr + sufstr + ".java");
             if (newFile.exists()) {
         		System.out.println(newFile + "文件已存在不作处理。");
     			return true;
@@ -35,10 +36,11 @@ public class QueryFacadeFileUtils {
             					newStr.substring(0, 1).toLowerCase().concat(newStr.substring(1).concat(sufstr)));
         		temp = temp.replaceAll("classname", newStr.concat(sufstr));
         		temp = temp.replaceAll("abstractname", "Abstract".concat(newStr.concat(sufstr)));
+                temp = temp.replaceAll("yourname", CreateFileConst.AUTHOR);
                 list.remove(i);
                 list.add(i, temp);
             }
-            FileUtils.writeLines(newFile, "UTF-8", list, "");
+            FileUtils.writeLines(newFile, "UTF-8", list, "\n");
         } catch (final IOException e) {
             e.printStackTrace();
         }

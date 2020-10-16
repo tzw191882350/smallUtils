@@ -6,7 +6,7 @@ import com.comtop.cap.runtime.base.facade.CapBaseFacade;
 
 /**
  * 
- * @author zangrihai
+ * @author yourname
  *
  */
 public abstract class abstractname extends CapBaseFacade {

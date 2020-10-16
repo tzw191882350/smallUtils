@@ -13,7 +13,8 @@ import com.ygsoft.createDapFile.fileType.QueryFacadeFileUtils;
  */
 public class App {
     public static void main( String[] args ) {
-    	String[] arr = new String[] { "AAA" };
+
+    	String[] arr = new String[] { "Dkllwh" };
     	for (int i = 0; i < arr.length; i++) {
     		modifyFile(arr[i]);
 		}
