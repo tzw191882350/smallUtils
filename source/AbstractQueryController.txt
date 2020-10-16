@@ -1,0 +1,27 @@
+package cn.csg.gmp.fm.electricity.controller.abs;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.comtop.cap.runtime.base.controller.CapBaseController;
+
+/**
+ * 
+ * @author zangrihai
+ *
+ */
+public abstract class abstractname extends CapBaseController {
+
+	/**
+	 * 注入facade层代码
+	 */
+	@Autowired
+	private facadename facadeService;
+
+	/**
+	 * facade实例
+	 */
+	@Override
+	protected facadename getCapBaseFacade() {
+		return facadeService;
+	}
+}

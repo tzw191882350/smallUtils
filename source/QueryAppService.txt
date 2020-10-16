@@ -1,0 +1,13 @@
+package cn.csg.gmp.fm.electricity.appservice;
+
+import org.springframework.stereotype.Service;
+
+/**
+ * 
+ * @author zangrihai
+ *
+ */
+@Service(value = "valuename")
+public class classname extends abstractname {
+
+}
