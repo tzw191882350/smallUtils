@@ -6,7 +6,7 @@ import com.comtop.cap.runtime.base.controller.CapBaseController;
 
 /**
  * 
- * @author zangrihai
+ * @author yourname
  *
  */
 public abstract class abstractname extends CapBaseController {

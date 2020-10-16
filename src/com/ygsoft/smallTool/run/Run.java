@@ -1,4 +1,4 @@
-package com.ygsoft.smallTool.myFrame;
+package com.ygsoft.smallTool.run;
 
 
 import com.ygsoft.smallTool.frame.ToolFrame;

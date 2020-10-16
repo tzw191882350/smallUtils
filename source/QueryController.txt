@@ -12,7 +12,7 @@ import io.swagger.annotations.Api;
 
 /**
  * 
- * @author zangrihai
+ * @author yourname
  *
  */
 @Api(tags = "")

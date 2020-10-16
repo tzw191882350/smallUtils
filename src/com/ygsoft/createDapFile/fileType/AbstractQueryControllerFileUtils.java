@@ -4,14 +4,15 @@ import java.io.File;
 import java.io.IOException;
 import java.util.List;
 
+import com.ygsoft.createDapFile.fileConst.CreateFileConst;
 import org.apache.commons.io.FileUtils;
 
 
 public class AbstractQueryControllerFileUtils {
 	
-	private static final String firstUrl = "E:\\南网云化改造\\filetool\\AbstractQueryController.txt";
+	private static final String firstUrl = CreateFileConst.getReadfilepath() + "AbstractQueryController.txt";
 	
-	private static final String modifyUrl = "D:\\develop\\gitCode\\NW_electricity\\com.ygsoft.gris.mapp.std.electricity.app\\src\\main\\java\\cn\\csg\\gmp\\fm\\electricity\\controller\\abs\\";
+	private static final String MODIFYURL = CreateFileConst.CREATEFILEPATH;
 	
 	public static void abstractQueryControllerFile(final String contentName) {
     	modifyFileContent(firstUrl, "QueryController", contentName);
@@ -23,7 +24,7 @@ public class AbstractQueryControllerFileUtils {
     public static boolean modifyFileContent(final File file, final String sufstr, final String newStr) {
         List<String> list = null;
         try {
-        	final File newFile = new File(modifyUrl + "Abstract"+ newStr + sufstr + ".java");
+        	final File newFile = new File(MODIFYURL + "abs\\Abstract"+ newStr + sufstr + ".java");
             if (newFile.exists()) {
         		System.out.println(newFile + "文件已存在不作处理。");
     			return true;
@@ -33,10 +34,11 @@ public class AbstractQueryControllerFileUtils {
             	final String line = list.get(i);
             	String temp = line.replaceAll("abstractname", "Abstract".concat(newStr.concat(sufstr)));
             	temp = temp.replace("facadename", newStr + "QueryFacade");
+                temp = temp.replaceAll("yourname", CreateFileConst.AUTHOR);
                 list.remove(i);
                 list.add(i, temp);
             }
-            FileUtils.writeLines(newFile, "UTF-8", list, "");
+            FileUtils.writeLines(newFile, "UTF-8", list, "\n");
         } catch (final IOException e) {
             e.printStackTrace();
         }
