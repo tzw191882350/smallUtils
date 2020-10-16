@@ -3,6 +3,7 @@ package com.ygsoft.smallTool.buildCodeUtil;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -254,7 +255,7 @@ public class BuildCodesUtil {
 				} else if ("1.1".equals(now)) {
 					buildSpecialOne(sb);
 				}
-				out.write(sb.toString().getBytes("utf-8"));
+				out.write(sb.toString().getBytes(StandardCharsets.UTF_8));
 				out .flush();
 			} else {
 				System.out.println(fileName + " can not be wrote");
@@ -984,7 +985,7 @@ public class BuildCodesUtil {
 	 */
 	private static String firstToLowerCase(final String text) {
 		final String first = text.substring(0, 1);
-		final String after = text.substring(1, text.length());
+		final String after = text.substring(1);
 		return first.toLowerCase() + after;
 	}
 
