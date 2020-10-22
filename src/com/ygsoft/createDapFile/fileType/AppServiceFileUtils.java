@@ -11,9 +11,7 @@ import org.apache.commons.io.FileUtils;
 public class AppServiceFileUtils {
 	
 	private static final String firstUrl = CreateFileConst.getReadfilepath() + "QueryAppService.txt";
-	
-	private static final String MODIFYURL = CreateFileConst.CREATEFILEPATH;
-	
+
 	public static void appServiceFile(final String contentName) {
     	modifyFileContent(firstUrl, "QueryAppService", contentName);
 	}
@@ -24,19 +22,21 @@ public class AppServiceFileUtils {
     public static boolean modifyFileContent(final File file, final String sufstr, final String newStr) {
         List<String> list = null;
         try {
-        	final File newFile = new File(MODIFYURL + newStr + sufstr + ".java");
+        	final File newFile = new File(CreateFileConst.CREATEFILEPATH + "appservice\\" + newStr + sufstr + ".java");
             if (newFile.exists()) {
         		System.out.println(newFile + "文件已存在不作处理。");
     			return true;
     		}
+    		final String packageStr = CreateFileConst.CREATEFILEPATH.replace("\\", ".") + "appservice";
             list = FileUtils.readLines(file, "UTF-8");
             for (int i = 0; i < list.size(); i++) {
             	final String line = list.get(i);
-            	String temp = line.replaceAll("valuename", 
+            	String temp = line.replaceAll("valuename",
             					newStr.substring(0, 1).toLowerCase().concat(newStr.substring(1).concat(sufstr)));
         		temp = temp.replaceAll("classname", newStr.concat(sufstr));
         		temp = temp.replaceAll("abstractname", "Abstract".concat(newStr.concat(sufstr)));
                 temp = temp.replaceAll("yourname", CreateFileConst.AUTHOR);
+                temp = temp.replaceAll("packagename", packageStr.substring(packageStr.indexOf("com")));
                 list.remove(i);
                 list.add(i, temp);
             }

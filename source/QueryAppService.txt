@@ -1,5 +1,6 @@
-package cn.csg.gmp.fm.electricity.appservice;
+package packagename;
 
+import packagename.abs.abstractname;
 import org.springframework.stereotype.Service;
 
 /**

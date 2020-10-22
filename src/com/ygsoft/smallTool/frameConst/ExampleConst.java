@@ -21,6 +21,11 @@ public final class ExampleConst {
     public static final Map<String, String[]> BUILDCODEEXAMPLEMAP = new HashMap<String, String[]>();
 
     /**
+     * 遍历文件转换示例Map.
+     */
+    public static final Map<String, String[]> LOOPFILEEXAMPLEMAP = new HashMap<String, String[]>();
+
+    /**
      * "1.将java中sql与plsql中sql进行转换"
      * "2.根据VO或者PO生成POVO转换类"
      * "3.获取每行某一位置字符串"
@@ -69,7 +74,15 @@ public final class ExampleConst {
                 + "author: tuzewen\n"
                 + "projectEnglishName: Gccbgj\n"
                 + "projectName: 工程成本归集\n",
-                
+                ""
+        });
+        LOOPFILEEXAMPLEMAP.put("1", new String[]{
+                "filePath: D:\\Test\n"
+                + "fileNameFilter: QueryContext\n"
+                + "fileTypeFilter: *.java\n"
+//                + "showAbsolutePath: true"
+//                + "showAbsolutePath: true"
+                + "showAbsolutePath: true\n",
                 ""
         });
     }

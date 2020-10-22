@@ -4,8 +4,7 @@ import java.io.File;
 import java.io.IOException;
 
 /**
- * @author tuzewen
- * @createTime {@YEAR}年{@MONTH}月{@DAY}日
+ * 创建文件工具常量类.
  */
 public final class CreateFileConst {
 

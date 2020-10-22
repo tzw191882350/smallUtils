@@ -39,6 +39,14 @@ public final class ToolTypeConst {
     };
 
     /**
+     * 代码生成工具
+     */
+    public static final String[] LOOPFILETYPE = new String[]{
+            "---请选择---",
+            "1.扫描指定文件夹下的文件"
+    };
+
+    /**
      * 工具类型加说明.
      */
     public static final Map<String, String> TOOLTYPEMAP = new HashMap<String, String>();

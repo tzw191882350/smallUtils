@@ -11,9 +11,7 @@ import org.apache.commons.io.FileUtils;
 public class QueryFacadeFileUtils {
 	
 	private static final String firstUrl = CreateFileConst.getReadfilepath() + "QueryFacade.txt";
-	
-	private static final String MODIFYURL = CreateFileConst.CREATEFILEPATH;
-	
+
 	public static void queryFacadeFile(final String contentName) {
     	modifyFileContent(firstUrl, "QueryFacade", contentName);
 	}
@@ -24,11 +22,12 @@ public class QueryFacadeFileUtils {
     public static boolean modifyFileContent(final File file, final String sufstr, final String newStr) {
         List<String> list = null;
         try {
-        	final File newFile = new File(MODIFYURL + newStr + sufstr + ".java");
+        	final File newFile = new File(CreateFileConst.CREATEFILEPATH + "facade\\" + newStr + sufstr + ".java");
             if (newFile.exists()) {
         		System.out.println(newFile + "文件已存在不作处理。");
     			return true;
     		}
+            final String packageStr = CreateFileConst.CREATEFILEPATH.replace("\\", ".") + "facade";
             list = FileUtils.readLines(file, "UTF-8");
             for (int i = 0; i < list.size(); i++) {
             	final String line = list.get(i);
@@ -37,6 +36,7 @@ public class QueryFacadeFileUtils {
         		temp = temp.replaceAll("classname", newStr.concat(sufstr));
         		temp = temp.replaceAll("abstractname", "Abstract".concat(newStr.concat(sufstr)));
                 temp = temp.replaceAll("yourname", CreateFileConst.AUTHOR);
+                temp = temp.replaceAll("packagename", packageStr.substring(packageStr.indexOf("com")));
                 list.remove(i);
                 list.add(i, temp);
             }

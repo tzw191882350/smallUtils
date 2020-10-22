@@ -1,9 +1,11 @@
-package cn.csg.gmp.fm.electricity.facade;
+package packagename;
 
 import java.io.InputStream;
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
+
+import packagename.abs.abstractname;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
