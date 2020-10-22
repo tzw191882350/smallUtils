@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<!--[if !IE]><!-->
+<html lang="zh-cn" class="no-js">
+<!--<![endif]-->
+<!-- BEGIN HEAD -->
+
+<head>
+<meta charset="utf-8"/>
+<title>查看财务凭证</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="" name="description"/>
+<meta content="" name="author"/>
+<!-- 平台ECP3.0通用样式 -->
+<link rel="stylesheet" href="../../../../assets/necp/themes/default/style.css">
+<link rel="stylesheet" href="../../../../assets/necp/themes/default/style-template.css">
+<link rel="stylesheet" href="../../../../assets/necp/themes/default/style-ecp-plugins.css">
+<link rel="stylesheet" href="../../../../assets/necp/themes/default/style-ecp.css">
+<link rel="stylesheet" href="../../../../assets/std/themes/default/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="../../../../assets/std/themes/default/font-custom/font-custom.css">
+
+</head>
+
+<!--[if IE 8]> <body class="ie8 page-footer-fixed"><![endif]-->
+
+<body class="page-footer-fixed">
+
+<div class="page-container">
+
+<div class="pageTop">
+  <div class="pageTopTitle ">查看财务凭证</div>
+  <div class="pageTopQuery">
+    <table id="querycondition" cellpadding="0" cellspacing="0">    
+      <tr>
+         <td class="text-right">年份：</td>
+         <td class="padding_r_40">
+	          <div class="datepicker-group">
+	            <input type="text"  id="year" ng-model="year" data-option='{"format":{"code":"@date#4"}}' class="form-control input_underline datepicker" 
+	                                                                                                       >至
+	            <input type="text" id="endyear" ng-model="endyear" data-option='{"format":{"code":"@date#4"}}' class="form-control input_underline datepicker" >             
+	          </div>
+         </td>
+         <td class="text-right">财务核算科目：</td> 
+         <td class="padding_r_40">                                
+             <input id="fullcaption" ng-model="fullcaption" type="text" class="form-control input_underline datepicker"  style='width:270px'>         
+         </td>              
+        <td class="padding_10px"><button id="queryBtn" class="btn btn-default btn_query">查询</td>
+        <td ><button id="resetBtn" class="btn btn-default btn_query">重置</td>
+      </tr>
+      <tr style="display:none"> 
+        <td class="text-right">所属工程项目：</td>
+        <td class="padding_r_40">         	                              
+           <input id="gcxmmc" ng-model="gcxmmc" type="text" class="form-control input_underline "  style='width:270px'>        
+        </td>       
+        <td class="text-right">查询编码：</td>        
+        <td class="padding_r_40">       
+           <input id="cxbm" ng-model="cxbm" type="text" class="form-control input_underline" data-options=""  style='width:150px'/>        
+        </td>
+         <td class="text-right">查询维度：</td>
+        <td class="padding_r_40">
+           <input id="cxwd" ng-model="cxwd" type="text" class="form-control input_underline" data-options=""  style='width:150px'/>        
+        </td>
+        <td class="text-right">财务核算科目代码：</td> 
+        <td class="padding_r_40">                                
+             <input id="itemcode" ng-model="itemcode" type="text" class="form-control input_underline datepicker"  style='width:270px'>         
+        </td>                 
+     </tr>                
+     </table>
+  </div>
+</div>
+
+ <!--<div class="padding_20">--> 
+  <div class="mainContainer">
+	  <div class="tableTopContainer clearfix">
+				<div class="btn-group tableTopBtnGroup">
+					<button id="cxpzBtn" type="button" class="btn">
+						<i class="iconfont icon-daoru"></i> 穿透
+					</button>					
+				</div>
+	  </div> 
+   	  <div class="table-responsive">
+    	 <div class="loadingLine" style="width: 0%;"></div>
+			<!--表格进度条-->
+		  	<div class="qzz-wrapper">
+		  		<table id="mainTable" class="table table-striped table-bordered table-hover"></table>
+			</div>
+   	  </div>
+  </div> 
+<!--</div>-->
+
+<!-- 底部工具栏 bottomBar -->
+<div id="bottomBar" class="footerBar navbar-fixed-bottom">
+  <div class="actions">
+        <button id="doExportDataBtn" type="button" class="btn btn-default">导出</button>                  
+  </div>
+ 
+</div>
+<!-- 底部工具栏 END -->
+
+</div>
+
+<script data-main="financialProofQuery.js" src="../..//grm/ecp/webcore/scripts/ecp.starter.js?mapp.name=com.ygsoft.gris.mapp.std.construct.finance.web"></script>
+
+</body>
+</html>
