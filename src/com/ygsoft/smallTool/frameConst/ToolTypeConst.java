@@ -43,7 +43,8 @@ public final class ToolTypeConst {
      */
     public static final String[] LOOPFILETYPE = new String[]{
             "---请选择---",
-            "1.扫描指定文件夹下的文件"
+            "1.扫描指定文件夹下的文件",
+            "2.按dap平台规范修改html和js"
     };
 
     /**

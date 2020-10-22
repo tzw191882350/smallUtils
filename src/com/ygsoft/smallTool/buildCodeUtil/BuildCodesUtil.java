@@ -981,7 +981,7 @@ public class BuildCodesUtil {
 
 	/**
 	 * 首字母小写.
-	 * @param sb 字符串
+	 * @param text 字符串
 	 */
 	private static String firstToLowerCase(final String text) {
 		final String first = text.substring(0, 1);

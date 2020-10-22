@@ -1,4 +1,5 @@
-package com.ygsoft.loopFileUtil;
+package com.ygsoft.test.loopFileUtil;
+
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -9,8 +10,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.Reader;
-
-import com.ygsoft.loopFileUtil.fileConst.SubsCssPathConst;
 
 /**
  * 替换css路径.
@@ -57,16 +56,16 @@ public class SubsCssPath {
 		// 查找文件内容路径
 //		final String path = "C:\\Users\\tuzewen\\Desktop\\有迹可循\\历史";
 		final String path = "E:\\eclipse6.0";
-		SubsCssPathConst.CSCJ = countString(path, "\\");
-		for (int i = SubsCssPathConst.CSCJ + 3; i < 100; i++) {
+		com.ygsoft.loopFileUtil.fileConst.SubsCssPathConst.CSCJ = countString(path, "\\");
+		for (int i = com.ygsoft.loopFileUtil.fileConst.SubsCssPathConst.CSCJ + 3; i < 100; i++) {
 			xdPath.append("../");
-			SubsCssPathConst.cjDyPath.put(i, xdPath.toString());
+			com.ygsoft.loopFileUtil.fileConst.SubsCssPathConst.cjDyPath.put(i, xdPath.toString());
 		}
 		traverseFolder2(path);
-		System.out.println("所有修改文件:\n" + SubsCssPathConst.modifyFileName.toString());
-		System.out.println("共修改文件:" + SubsCssPathConst.WRITEFILECOUNTS + "个");
-		System.out.println("共匹配文件:" + SubsCssPathConst.RIGHTCOUNTS + "个");
-		System.out.println("共扫描文件:" + SubsCssPathConst.FILECOUNTS + "个");
+		System.out.println("所有修改文件:\n" + com.ygsoft.loopFileUtil.fileConst.SubsCssPathConst.modifyFileName.toString());
+		System.out.println("共修改文件:" + com.ygsoft.loopFileUtil.fileConst.SubsCssPathConst.WRITEFILECOUNTS + "个");
+		System.out.println("共匹配文件:" + com.ygsoft.loopFileUtil.fileConst.SubsCssPathConst.RIGHTCOUNTS + "个");
+		System.out.println("共扫描文件:" + com.ygsoft.loopFileUtil.fileConst.SubsCssPathConst.FILECOUNTS + "个");
 	}
 	
 	/**
@@ -92,7 +91,7 @@ public class SubsCssPath {
 							is = new FileInputStream(file2);
 							reader = new InputStreamReader(is, "UTF-8");
 							bufferedReader = new BufferedReader(reader);
-							SubsCssPathConst.FILECOUNTS++;
+							com.ygsoft.loopFileUtil.fileConst.SubsCssPathConst.FILECOUNTS++;
 							absoluteFile(file2, bufferedReader);
 							bufferedReader.close();
 						}
@@ -121,57 +120,57 @@ public class SubsCssPath {
 		final String filePath = file2.getAbsolutePath();
 		final int lastNameIndex = filePath.lastIndexOf("\\") + 1;
 		final StringBuilder info = new StringBuilder();
-		SubsCssPathConst.title = "";
-		SubsCssPathConst.isModify = false;
-		SubsCssPathConst.isComments = false;
-		if (SubsCssPathConst.SUBCSS) {
+		com.ygsoft.loopFileUtil.fileConst.SubsCssPathConst.title = "";
+		com.ygsoft.loopFileUtil.fileConst.SubsCssPathConst.isModify = false;
+		com.ygsoft.loopFileUtil.fileConst.SubsCssPathConst.isComments = false;
+		if (com.ygsoft.loopFileUtil.fileConst.SubsCssPathConst.SUBCSS) {
 			info.append("准备修改文件的css");
 			subCssMethod(filePath, file2, bufferedReader);
 		}
-		if (SubsCssPathConst.SUBJAVA) {
+		if (com.ygsoft.loopFileUtil.fileConst.SubsCssPathConst.SUBJAVA) {
 			info.append("准备修改文件的@Service注解");
 			subJavaMethod(filePath, file2, bufferedReader);
 		}
-		if (SubsCssPathConst.SUBURL) {
+		if (com.ygsoft.loopFileUtil.fileConst.SubsCssPathConst.SUBURL) {
 			info.append("准备修改文件的穿透的url地址");
 			subUrlpathMethod(filePath, file2, bufferedReader);
 		}
-		if (SubsCssPathConst.SUBATOB) {
+		if (com.ygsoft.loopFileUtil.fileConst.SubsCssPathConst.SUBATOB) {
 			info.append("准备修改文件的单引号变双引号");
 			subAtoBMethod(filePath, file2, bufferedReader);
 		}
-		if (SubsCssPathConst.SUBSTARTJS) {
+		if (com.ygsoft.loopFileUtil.fileConst.SubsCssPathConst.SUBSTARTJS) {
 			info.append("准备修改文件的start.js路径");
 			subStartPathMethod(filePath, file2, bufferedReader);
 		}
-		if (SubsCssPathConst.SUBMDMXHTML) {
+		if (com.ygsoft.loopFileUtil.fileConst.SubsCssPathConst.SUBMDMXHTML) {
 			info.append("准备修改文件的html路径");
 			subMdmxHtml(filePath, file2, bufferedReader);
 		}
-		if (SubsCssPathConst.SUBYWDJHTML) {
+		if (com.ygsoft.loopFileUtil.fileConst.SubsCssPathConst.SUBYWDJHTML) {
 			info.append("准备修改文件的各种引用路径");
 			subYwdjHtml(filePath, file2, bufferedReader);
 		}
-		if (SubsCssPathConst.SUBJSPATHJS) {
+		if (com.ygsoft.loopFileUtil.fileConst.SubsCssPathConst.SUBJSPATHJS) {
 			info.append("准备修改js文件中的引用其他文件的路径");
 			subJsPath(filePath, file2, bufferedReader);
 		}
-		if (SubsCssPathConst.SUBHTMLPATHACTX) {
+		if (com.ygsoft.loopFileUtil.fileConst.SubsCssPathConst.SUBHTMLPATHACTX) {
 			info.append("准备修改actx文件中的html路径");
 			subActxPath(filePath, file2, bufferedReader);
 		}
-		if (SubsCssPathConst.FINDFILE) {
+		if (com.ygsoft.loopFileUtil.fileConst.SubsCssPathConst.FINDFILE) {
 			info.append("扫描待匹配文件的路径");
 			findFile(filePath, file2, bufferedReader);
 		}
-		if (SubsCssPathConst.FINDFILEPATH && filePath.contains("com.ygsoft.gris") && filePath.endsWith("Context.java")
+		if (com.ygsoft.loopFileUtil.fileConst.SubsCssPathConst.FINDFILEPATH && filePath.contains("com.ygsoft.gris") && filePath.endsWith("Context.java")
 				&& filePath.contains("service")) {
 			info.append("扫描待匹配文件的路径");
 			findFilePath(filePath, file2, bufferedReader);
 		}
 		
 //		info.append("--" + filePath.substring(lastNameIndex, filePath.length()) + SubsCssPathConst.title + "\n");
-		if (SubsCssPathConst.INFOENABLE) {
+		if (com.ygsoft.loopFileUtil.fileConst.SubsCssPathConst.INFOENABLE) {
 			System.out.println(info);
 		}
 		
@@ -189,7 +188,7 @@ public class SubsCssPath {
 			final int cj = countString(filePath, "\\");
 			System.out.print("层级cj:" + cj + "--");
 			// 如果层级大于初始层级+指定层级才做转换
-			if (cj > SubsCssPathConst.CSCJ + SubsCssPathConst.ZDCJ) {
+			if (cj > com.ygsoft.loopFileUtil.fileConst.SubsCssPathConst.CSCJ + com.ygsoft.loopFileUtil.fileConst.SubsCssPathConst.ZDCJ) {
 				System.out.println(filePath);
 				final StringBuilder sb = new StringBuilder();
 				while ((line = bufferedReader.readLine()) != null) {
@@ -197,7 +196,7 @@ public class SubsCssPath {
 						line = line.replace("/themes", "/themes/default");
 					}
 					if (line.contains("ecp.starter.js")) {
-						line = line.replace("/grm/ecp/webcore/scripts/ecp.starter.js", SubsCssPathConst.cjDyPath.get(cj) + "ecp/webcore/scripts/ecp.starter.js?mapp.name=" + SubsCssPathConst.WFWNAME);
+						line = line.replace("/grm/ecp/webcore/scripts/ecp.starter.js", com.ygsoft.loopFileUtil.fileConst.SubsCssPathConst.cjDyPath.get(cj) + "ecp/webcore/scripts/ecp.starter.js?mapp.name=" + com.ygsoft.loopFileUtil.fileConst.SubsCssPathConst.WFWNAME);
 					}
 					// 已经存在../的个数
 					final int existCjpathNum = countString(line, "../");
@@ -207,16 +206,16 @@ public class SubsCssPath {
 						for (int i = 0; i < existCjpathNum; i++) {
 							existCjpathStr.append("../");
 						}
-						line = line.replace(existCjpathStr, SubsCssPathConst.cjDyPath.get(cj));
+						line = line.replace(existCjpathStr, com.ygsoft.loopFileUtil.fileConst.SubsCssPathConst.cjDyPath.get(cj));
 						sb.append(line + "\n");
 						continue;
 					}
 					if (line.contains("style.css") || line.contains("style-template.css") 
 							|| line.contains("font-awesome.min.css") || line.contains("font-custom.css")
 							|| line.contains("icomoon.css")) {
-						line = line.replace("/grm/ecp/webcore", SubsCssPathConst.cjDyPath.get(cj) + "assets/std");
+						line = line.replace("/grm/ecp/webcore", com.ygsoft.loopFileUtil.fileConst.SubsCssPathConst.cjDyPath.get(cj) + "assets/std");
 					} else if (line.contains("style-ecp-plugins.css") || line.contains("style-ecp.css")) {
-						line = line.replace("/grm/ecp/webcore", SubsCssPathConst.cjDyPath.get(cj) + "assets/necp");
+						line = line.replace("/grm/ecp/webcore", com.ygsoft.loopFileUtil.fileConst.SubsCssPathConst.cjDyPath.get(cj) + "assets/necp");
 					}
 					
 					sb.append(line + "\n");
@@ -448,7 +447,7 @@ public class SubsCssPath {
 			final StringBuilder sb = new StringBuilder();
 			while ((line = bufferedReader.readLine()) != null) {
 				if (line.indexOf("<title>") > -1) {
-					SubsCssPathConst.title = "--" + line.substring(line.indexOf(">") + 1, line.indexOf("/") - 1);
+					com.ygsoft.loopFileUtil.fileConst.SubsCssPathConst.title = "--" + line.substring(line.indexOf(">") + 1, line.indexOf("/") - 1);
 				}
 				if (line.indexOf("平台ECP3.0通用样式") > -1) {
 					isUiThree = true;
@@ -469,9 +468,9 @@ public class SubsCssPath {
 //							isYwdj = true;
 //						}
 						if (line.indexOf("main.min.css") > -1 || line.indexOf("icomoon.css") > -1) {
-							sb.append(line.replaceAll("/grm/ecp/webcore", SubsCssPathConst.cjDyPath.get(cj) + "assets/necp"));
+							sb.append(line.replaceAll("/grm/ecp/webcore", com.ygsoft.loopFileUtil.fileConst.SubsCssPathConst.cjDyPath.get(cj) + "assets/necp"));
 						} else if(line.indexOf("generalentity.css") > -1) {
-							sb.append(line.replaceAll("/grm", SubsCssPathConst.cjDyPath.get(cj) + "assets/components"));
+							sb.append(line.replaceAll("/grm", com.ygsoft.loopFileUtil.fileConst.SubsCssPathConst.cjDyPath.get(cj) + "assets/components"));
 						} else {
 							sb.append(line);
 						}
@@ -481,12 +480,12 @@ public class SubsCssPath {
 //							isYwdj = true;
 //						}
 						if(line.indexOf("com.ygsoft.ecp.skin.ui_bill_3.css") > -1) {
-							sb.append(line.replaceAll("/grm", SubsCssPathConst.cjDyPath.get(cj) + "assets/components"));
+							sb.append(line.replaceAll("/grm", com.ygsoft.loopFileUtil.fileConst.SubsCssPathConst.cjDyPath.get(cj) + "assets/components"));
 						} else if(line.indexOf("com.ygsoft.ecp.initiator.js") > -1) {
-							sb.append(line.replaceAll("/grm/ecp", SubsCssPathConst.cjDyPath.get(cj) + "assets/necp"));
+							sb.append(line.replaceAll("/grm/ecp", com.ygsoft.loopFileUtil.fileConst.SubsCssPathConst.cjDyPath.get(cj) + "assets/necp"));
 						} else if(line.indexOf("/grm/construction") > -1) {
 							if (line.indexOf("/grm/construction/framework") > -1) {
-								sb.append(line.replaceAll("/grm/construction/framework", SubsCssPathConst.cjDyPath.get(cj) + "assets/components/constructframeworkweb"));
+								sb.append(line.replaceAll("/grm/construction/framework", com.ygsoft.loopFileUtil.fileConst.SubsCssPathConst.cjDyPath.get(cj) + "assets/components/constructframeworkweb"));
 							} else {
 								sb.append(line.substring(0, line.indexOf("/grm"))).append("/gris/mapp/constructfinanceweb").append(line.substring(getIndexByTime(line, "/", 4)));
 							}
@@ -508,7 +507,7 @@ public class SubsCssPath {
 	 * @throws IOException 
 	 */
 	private static void subJsPath(final String filePath, final File file2, final BufferedReader bufferedReader) throws IOException {
-		if (filePath.indexOf(".js") > -1 && SubsCssPathConst.WRITEFILECOUNTS < 2000) {
+		if (filePath.indexOf(".js") > -1 && com.ygsoft.loopFileUtil.fileConst.SubsCssPathConst.WRITEFILECOUNTS < 2000) {
 //		if (filePath.indexOf(".js") > -1 && filePath.indexOf("com.ygsoft.gris.construction.framework.baseGldxListPage.Controller") > -1) {
 			boolean start = false;
 			boolean hasCommonUtil = false;
@@ -517,9 +516,9 @@ public class SubsCssPath {
 			final StringBuilder sb = new StringBuilder();
 			while ((line = bufferedReader.readLine()) != null) {
 				if (line.contains("/*")) {
-					SubsCssPathConst.isComments = true;					
+					com.ygsoft.loopFileUtil.fileConst.SubsCssPathConst.isComments = true;
 				}
-				if (SubsCssPathConst.isComments) {
+				if (com.ygsoft.loopFileUtil.fileConst.SubsCssPathConst.isComments) {
 					sb.append(line);
 				} else {
 					if(line.indexOf("jsImport") > -1 && !line.contains("//")) {
@@ -572,10 +571,10 @@ public class SubsCssPath {
 				}
 				sb.append("\n");
 				if (line.contains("*/")) {
-					SubsCssPathConst.isComments = false;					
+					com.ygsoft.loopFileUtil.fileConst.SubsCssPathConst.isComments = false;
 				}
 			}
-			if (SubsCssPathConst.isModify) {
+			if (com.ygsoft.loopFileUtil.fileConst.SubsCssPathConst.isModify) {
 				write(sb.toString(), file2);
 			}
 		}
@@ -622,7 +621,7 @@ public class SubsCssPath {
 			while ((line = bufferedReader.readLine()) != null) {
 				final String containStr = "loop";
 				if(line.toLowerCase().indexOf(containStr) > -1) {
-					SubsCssPathConst.RIGHTCOUNTS++;
+					com.ygsoft.loopFileUtil.fileConst.SubsCssPathConst.RIGHTCOUNTS++;
 					start = true;
 					break;
 				}
@@ -693,8 +692,8 @@ public class SubsCssPath {
 		BufferedWriter writer = null;
 		try {
 			writer = new BufferedWriter(new FileWriter(dist));
-			SubsCssPathConst.WRITEFILECOUNTS++;
-			SubsCssPathConst.modifyFileName.append(dist.getName() + "\n");
+			com.ygsoft.loopFileUtil.fileConst.SubsCssPathConst.WRITEFILECOUNTS++;
+			com.ygsoft.loopFileUtil.fileConst.SubsCssPathConst.modifyFileName.append(dist.getName() + "\n");
 			writer.write(cont);
 			writer.flush();
 		} catch (final IOException e) {
@@ -714,7 +713,7 @@ public class SubsCssPath {
 	 * 修改
 	 */
 	private static StringBuilder modify(final StringBuilder sb, final String str) {
-		SubsCssPathConst.isModify = true;
+		com.ygsoft.loopFileUtil.fileConst.SubsCssPathConst.isModify = true;
 		sb.append(str);
 		return sb;
 	}

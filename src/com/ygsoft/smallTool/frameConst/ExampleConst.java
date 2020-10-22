@@ -80,8 +80,13 @@ public final class ExampleConst {
                 "filePath: D:\\Test\n"
                 + "fileNameFilter: QueryContext\n"
                 + "fileTypeFilter: *.java\n"
-//                + "showAbsolutePath: true"
-//                + "showAbsolutePath: true"
+                + "showAbsolutePath: true\n",
+                ""
+        });
+        LOOPFILEEXAMPLEMAP.put("2", new String[]{
+                "filePath: D:\\ideaworkspace\\smallUtils\\src\\com\\ygsoft\\test\\testFile\n"
+                + "fileNameFilter: \n"
+                + "fileTypeFilter: *.html\n"
                 + "showAbsolutePath: true\n",
                 ""
         });

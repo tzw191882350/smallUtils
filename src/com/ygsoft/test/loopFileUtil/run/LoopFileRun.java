@@ -1,6 +1,6 @@
-package com.ygsoft.loopFileUtil.run;
+package com.ygsoft.test.loopFileUtil.run;
 
-import com.ygsoft.loopFileUtil.SubsCssPath;
+import com.ygsoft.test.loopFileUtil.SubsCssPath;
 
 /**
  * @author tuzewen

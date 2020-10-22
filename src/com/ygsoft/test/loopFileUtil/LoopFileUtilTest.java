@@ -1,8 +1,9 @@
 package com.ygsoft.test.loopFileUtil;
 
-import com.ygsoft.loopFileUtil.fileConst.SubsCssPathConst;
+
 
 import java.io.*;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -10,7 +11,7 @@ import java.util.List;
  * @author tuzewen
  * @createTime {@YEAR}年{@MONTH}月{@DAY}日
  */
-public final class LoopFileUtil {
+public final class LoopFileUtilTest {
 
     /**
      * 文件名集合.
@@ -29,13 +30,10 @@ public final class LoopFileUtil {
     /**
      * 查找所有文件路径
      * @param filePath
-     * @param file2
-     * @param bufferedReader
-     * @throws IOException
      */
-    private static void findFilePath(final String filePath, final File file2, final BufferedReader bufferedReader) throws IOException {
+    private static void findFilePath(final String filePath) {
         final int index = filePath.lastIndexOf("\\");
-        final String contextName = filePath.substring(index + 1, filePath.length());
+        final String contextName = filePath.substring(index + 1);
         fileNameList.add(contextName);
     }
 
@@ -60,9 +58,9 @@ public final class LoopFileUtil {
                             traverseFolder2(file2.getAbsolutePath());
                         } else {
                             is = new FileInputStream(file2);
-                            reader = new InputStreamReader(is, "UTF-8");
+                            reader = new InputStreamReader(is, StandardCharsets.UTF_8);
                             bufferedReader = new BufferedReader(reader);
-                            SubsCssPathConst.FILECOUNTS++;
+                            com.ygsoft.loopFileUtil.fileConst.SubsCssPathConst.FILECOUNTS++;
                             absoluteFile(file2, bufferedReader);
                             bufferedReader.close();
                         }
@@ -89,18 +87,16 @@ public final class LoopFileUtil {
      */
     private static void absoluteFile(final File file2, final BufferedReader bufferedReader) throws IOException {
         final String filePath = file2.getAbsolutePath();
-        final int lastNameIndex = filePath.lastIndexOf("\\") + 1;
-        final StringBuilder info = new StringBuilder();
-        SubsCssPathConst.title = "";
-        SubsCssPathConst.isModify = false;
-        SubsCssPathConst.isComments = false;
+        com.ygsoft.loopFileUtil.fileConst.SubsCssPathConst.title = "";
+        com.ygsoft.loopFileUtil.fileConst.SubsCssPathConst.isModify = false;
+        com.ygsoft.loopFileUtil.fileConst.SubsCssPathConst.isComments = false;
         if (filePath.contains("com.ygsoft.gris")
                 && filePath.endsWith("Context.java")
                 && filePath.contains("service")) {
-            findFilePath(filePath, file2, bufferedReader);
+            findFilePath(filePath);
         }
         if (filePath.endsWith("FileUtils.java")) {
-            findFilePath(filePath, file2, bufferedReader);
+            findFilePath(filePath);
         }
 
     }

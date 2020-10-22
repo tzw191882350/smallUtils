@@ -1,49 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="smallUtils:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="5f6fbd4c-9cd6-4da6-9b32-58d1974bcd3c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/bin/com/ygsoft/loopFileUtil/SubsCssPath.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/com/ygsoft/loopFileUtil/fileConst/SubsCssPathConst.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ygsoft/framework/buildUtil/BuildParamsMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ygsoft/smallTool/loopFileUtil/LoopFileUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ygsoft/test/loopFileUtil/LoopFileUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ygsoft/test/loopFileUtil/SubsCssPath.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ygsoft/test/loopFileUtil/fileConst/SubsCssPathConst.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ygsoft/test/loopFileUtil/run/LoopFileRun.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/smallUtils_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ygsoft/test/loopFileUtil/TestMain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/ygsoft/createDapFile/fileConst/CreateFileConst.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/ygsoft/createDapFile/fileConst/CreateFileConst.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/com/ygsoft/createDapFile/fileType/AbstractQueryAppServiceFileUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/ygsoft/createDapFile/fileType/AbstractQueryAppServiceFileUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/ygsoft/createDapFile/fileType/AbstractQueryControllerFileUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/ygsoft/createDapFile/fileType/AbstractQueryControllerFileUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/ygsoft/createDapFile/fileType/AbstractQueryFacadeFileUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/ygsoft/createDapFile/fileType/AbstractQueryFacadeFileUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/ygsoft/createDapFile/fileType/AppServiceFileUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/ygsoft/createDapFile/fileType/AppServiceFileUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/ygsoft/createDapFile/fileType/QueryControllerFileUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/ygsoft/createDapFile/fileType/QueryControllerFileUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/ygsoft/createDapFile/fileType/QueryFacadeFileUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/ygsoft/createDapFile/fileType/QueryFacadeFileUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/ygsoft/createDapFile/run/App.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/ygsoft/smallTool/buildCodeUtil/BuildCodesUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/ygsoft/smallTool/buildCodeUtil/BuildCodesUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/ygsoft/smallTool/run/Run.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/AbstractQueryAppService.txt" beforeDir="false" afterPath="$PROJECT_DIR$/source/AbstractQueryAppService.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/AbstractQueryController.txt" beforeDir="false" afterPath="$PROJECT_DIR$/source/AbstractQueryController.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/AbstractQueryFacade.txt" beforeDir="false" afterPath="$PROJECT_DIR$/source/AbstractQueryFacade.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/QueryAppService.txt" beforeDir="false" afterPath="$PROJECT_DIR$/source/QueryAppService.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/QueryController.txt" beforeDir="false" afterPath="$PROJECT_DIR$/source/QueryController.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/QueryFacade.txt" beforeDir="false" afterPath="$PROJECT_DIR$/source/QueryFacade.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ygsoft/createDapFile/fileConst/CreateFileConst.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ygsoft/createDapFile/fileConst/CreateFileConst.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/ygsoft/loopFileUtil/SubsCssPath.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/ygsoft/smallTool/frameConst/ExampleConst.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/ygsoft/smallTool/frameConst/ExampleConst.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/ygsoft/smallTool/frameConst/ToolTypeConst.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/ygsoft/smallTool/frameConst/ToolTypeConst.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/ygsoft/createDapFile/fileType/AbstractQueryAppServiceFileUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ygsoft/createDapFile/fileType/AbstractQueryAppServiceFileUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ygsoft/createDapFile/fileType/AbstractQueryControllerFileUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ygsoft/createDapFile/fileType/AbstractQueryControllerFileUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ygsoft/createDapFile/fileType/AbstractQueryFacadeFileUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ygsoft/createDapFile/fileType/AbstractQueryFacadeFileUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ygsoft/createDapFile/fileType/AppServiceFileUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ygsoft/createDapFile/fileType/AppServiceFileUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ygsoft/createDapFile/fileType/QueryControllerFileUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ygsoft/createDapFile/fileType/QueryControllerFileUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ygsoft/createDapFile/fileType/QueryFacadeFileUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ygsoft/createDapFile/fileType/QueryFacadeFileUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ygsoft/createDapFile/run/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ygsoft/createDapFile/run/DapRun.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ygsoft/createDapFile/testFile/DkllwhQueryController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ygsoft/createDapFile/testFile/DkllwhQueryFacade.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ygsoft/createDapFile/testFile/abs/AbstractDkllwhQueryAppService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ygsoft/createDapFile/testFile/abs/AbstractDkllwhQueryController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ygsoft/createDapFile/testFile/abs/AbstractDkllwhQueryFacade.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ygsoft/smallTool/frame/ToolFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ygsoft/smallTool/frame/ToolFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ygsoft/createDapFile/run/DapRun.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ygsoft/createDapFile/run/DapRun.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ygsoft/smallTool/buildCodeUtil/BuildCodesUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ygsoft/smallTool/buildCodeUtil/BuildCodesUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/ygsoft/smallTool/frameConst/ExampleConst.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ygsoft/smallTool/frameConst/ExampleConst.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/ygsoft/smallTool/frameConst/ToolTypeConst.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ygsoft/smallTool/frameConst/ToolTypeConst.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ygsoft/smallTool/run/Run.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ygsoft/smallTool/run/SmallUtilRun.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ygsoft/smallTool/loopFileUtil/LoopFileUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ygsoft/smallTool/loopFileUtil/LoopFileUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ygsoft/test/loopFileUtil/LoopFileUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ygsoft/test/loopFileUtil/LoopFileUtilTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ygsoft/test/loopFileUtil/SubsCssPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ygsoft/test/loopFileUtil/SubsCssPath.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ygsoft/test/loopFileUtil/run/LoopFileRun.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ygsoft/test/loopFileUtil/run/LoopFileRun.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ygsoft/test/testFile/financialProofQuery.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ygsoft/test/testFile/financialProofQuery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ygsoft/test/testFile/financialProofQuery_ui3.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ygsoft/test/testFile/financialProofQuery_ui3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ygsoft/test/testFile/mult/financialProofQuery.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ygsoft/test/testFile/mult/financialProofQuery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ygsoft/test/testFile/mult/financialProofQuery_ui3.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ygsoft/test/testFile/mult/financialProofQuery_ui3.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -60,10 +45,10 @@
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.23" value="1" />
           <entry key="project.open.time.24" value="1" />
-          <entry key="project.open.time.25" value="1" />
+          <entry key="project.open.time.25" value="2" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages">
@@ -77,28 +62,37 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="74" />
+          <entry key="html" value="8" />
+          <entry key="java" value="95" />
+          <entry key="js" value="2" />
           <entry key="txt" value="29" />
-          <entry key="xml" value="2" />
+          <entry key="xml" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="74" />
+          <entry key="HTML" value="8" />
+          <entry key="JAVA" value="95" />
+          <entry key="JavaScript" value="2" />
           <entry key="PLAIN_TEXT" value="29" />
-          <entry key="XML" value="2" />
+          <entry key="XML" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="2645" />
-          <entry key="txt" value="100" />
+          <entry key="dummy" value="4" />
+          <entry key="html" value="4" />
+          <entry key="java" value="4292" />
+          <entry key="js" value="12" />
+          <entry key="txt" value="112" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2645" />
-          <entry key="PLAIN_TEXT" value="100" />
+          <entry key="HTML" value="4" />
+          <entry key="JAVA" value="4292" />
+          <entry key="JavaScript" value="12" />
+          <entry key="PLAIN_TEXT" value="116" />
         </counts>
       </usages-collector>
     </session>
@@ -109,52 +103,52 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ygsoft/test/loopFileUtil/fileConst/SubsCssPathConst.java">
+        <entry file="file://$PROJECT_DIR$/src/com/ygsoft/smallTool/loopFileUtil/LoopFileUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="13" column="7" lean-forward="true" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ygsoft/test/loopFileUtil/run/LoopFileRun.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="110">
+              <caret line="174" column="58" selection-start-line="174" selection-start-column="58" selection-end-line="174" selection-end-column="58" />
               <folding>
-                <element signature="e#221#222#0" expanded="true" />
-                <element signature="e#254#255#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#6694#6695#0" expanded="true" />
+                <element signature="e#6728#6729#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ygsoft/test/loopFileUtil/SubsCssPath.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="875">
-              <caret line="87" column="48" lean-forward="true" selection-start-line="87" selection-start-column="48" selection-end-line="87" selection-end-column="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ygsoft/createDapFile/run/DapRun.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ygsoft/smallTool/run/SmallUtilRun.java">
+        <entry file="file://$PROJECT_DIR$/src/com/ygsoft/test/testFile/financialProofQuery.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="275">
-              <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+              <caret line="60" column="22" selection-start-line="60" selection-start-column="22" selection-end-line="60" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/ygsoft/test/testFile/financialProofQuery_ui3.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="254">
+              <caret line="102" selection-start-line="102" selection-end-line="104" selection-end-column="69" />
               <folding>
-                <element signature="e#175#176#0" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#td#3;n#tr#0;n#table#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#tr#1;n#table#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#td#1;n#tr#1;n#table#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#td#3;n#tr#1;n#table#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#td#5;n#tr#1;n#table#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#td#7;n#tr#1;n#table#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/ygsoft/smallTool/run/SmallUtilRun.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="250">
+              <caret line="10" column="50" lean-forward="true" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
+              <folding>
                 <element signature="e#206#207#0" expanded="true" />
               </folding>
             </state>
@@ -162,28 +156,40 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ygsoft/smallTool/loopFileUtil/LoopFileUtil.java">
+        <entry file="file://$PROJECT_DIR$/src/com/ygsoft/test/testFile/mult/financialProofQuery_ui3.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="44" column="4" lean-forward="true" selection-start-line="44" selection-start-column="4" selection-end-line="44" selection-end-column="4" />
+            <state relative-caret-position="304">
+              <caret line="102" column="38" selection-start-line="102" selection-start-column="38" selection-end-line="102" selection-end-column="38" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ygsoft/smallTool/frameConst/ToolTypeConst.java">
+        <entry file="file://$PROJECT_DIR$/src/com/ygsoft/test/testFile/financialProofQuery_ui3 - 副本.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="41">
-              <caret line="31" column="4" lean-forward="true" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
+            <state relative-caret-position="140">
+              <caret line="98" column="18" selection-start-line="98" selection-start-column="18" selection-end-line="98" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ygsoft/framework/buildUtil/BuildParamsMap.java">
+        <entry file="file://$PROJECT_DIR$/src/com/ygsoft/test/loopFileUtil/SubsCssPath.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="30" column="41" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
+            <state relative-caret-position="25">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/ygsoft/test/loopFileUtil/LoopFileUtilTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="50">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -194,25 +200,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/ygsoft/smallTool/frame/ToolFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="188" column="14" lean-forward="true" selection-start-line="188" selection-start-column="14" selection-end-line="188" selection-end-column="14" />
-              <folding>
-                <element signature="e#13673#13674#0" expanded="true" />
-                <element signature="e#13698#13699#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="147">
+              <caret line="398" column="9" selection-start-line="398" selection-start-column="9" selection-end-line="398" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/ygsoft/smallTool/frameConst/ExampleConst.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="80" column="47" selection-start-line="80" selection-start-column="47" selection-end-line="80" selection-end-column="47" />
-              <folding>
-                <element signature="e#416#434#0" expanded="true" />
-                <element signature="e#554#572#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="267">
+              <caret line="87" column="38" selection-start-line="87" selection-start-column="38" selection-end-line="87" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -228,27 +226,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>filePath</find>
-      <find>南网云化改造</find>
-      <find>&quot;E:\\南网云化改造\\filetool\\</find>
-      <find>modifyUrl = &quot;&quot;;</find>
       <find>modifyUrl</find>
       <find>FileUtils.writeLines(newFile, &quot;UTF-8&quot;, list, &quot;&quot;);</find>
       <find>MODIFYURL</find>
       <find>packageName</find>
       <find>modifyFileName</find>
-      <find>absoluteFile</find>
       <find>SQLTOOL</find>
       <find>afterTextArea</find>
       <find>toolTypeStr</find>
       <find>getAllToolTypeStr</find>
-      <find>findFilePath</find>
-      <find>findAllCompareFile</find>
       <find>FILECOUNTS</find>
       <find>SubsCssPathConst.FILECOUNTS</find>
       <find>BUILDCODETOOL</find>
       <find>compareFileConuts</find>
       <find>findFile</find>
+      <find>subActxPath</find>
+      <find>absoluteFile</find>
+      <find>findFilePath</find>
+      <find>subStartPathMethod</find>
+      <find>filePath</find>
+      <find>typeCompare</find>
+      <find>findAllCompareFile</find>
+      <find>sb</find>
+      <find>filterFileNameAndType</find>
+      <find>../../</find>
+      <find>updateFileByDap</find>
+      <find>subJsPath</find>
+      <find>isModify</find>
+      <find>result</find>
+      <find>setResult</find>
+      <find>write</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -262,6 +269,9 @@
       <replace>viewFileConuts</replace>
       <replace>SQLUTIL</replace>
       <replace>compareFileConuts</replace>
+      <replace>result</replace>
+      <replace>&quot; + jsName + &quot;</replace>
+      <replace>fileContent</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -296,7 +306,6 @@
         <option value="$PROJECT_DIR$/source/AbstractQueryController.txt" />
         <option value="$PROJECT_DIR$/source/AbstractQueryFacade.txt" />
         <option value="$PROJECT_DIR$/src/com/ygsoft/createDapFile/fileType/AppServiceFileUtils.java" />
-        <option value="$PROJECT_DIR$/src/com/ygsoft/createDapFile/fileType/AbstractQueryAppServiceFileUtils.java" />
         <option value="$PROJECT_DIR$/src/com/ygsoft/createDapFile/fileType/AbstractQueryControllerFileUtils.java" />
         <option value="$PROJECT_DIR$/src/com/ygsoft/createDapFile/fileType/AbstractQueryFacadeFileUtils.java" />
         <option value="$PROJECT_DIR$/src/com/ygsoft/createDapFile/fileType/QueryControllerFileUtils.java" />
@@ -307,14 +316,24 @@
         <option value="$PROJECT_DIR$/source/QueryController.txt" />
         <option value="$PROJECT_DIR$/source/QueryFacade.txt" />
         <option value="$PROJECT_DIR$/src/com/ygsoft/smallTool/run/Run.java" />
-        <option value="$PROJECT_DIR$/src/com/ygsoft/smallTool/frameConst/ToolTypeConst.java" />
         <option value="$PROJECT_DIR$/src/com/ygsoft/framework/buildUtil/BuildParamsMap.java" />
         <option value="$PROJECT_DIR$/src/com/ygsoft/smallTool/frame/ToolFrame.java" />
-        <option value="$PROJECT_DIR$/src/com/ygsoft/test/loopFileUtil/LoopFileUtil.java" />
-        <option value="$PROJECT_DIR$/src/com/ygsoft/test/loopFileUtil/fileConst/SubsCssPathConst.java" />
         <option value="$PROJECT_DIR$/src/com/ygsoft/createDapFile/run/DapRun.java" />
-        <option value="$PROJECT_DIR$/src/com/ygsoft/smallTool/loopFileUtil/LoopFileUtil.java" />
+        <option value="$PROJECT_DIR$/src/com/ygsoft/smallTool/buildCodeUtil/BuildCodesUtil.java" />
+        <option value="$PROJECT_DIR$/src/com/ygsoft/test/loopFileUtil/run/LoopFileRun.java" />
+        <option value="$PROJECT_DIR$/src/com/ygsoft/test/loopFileUtil/LoopFileUtil.java" />
+        <option value="$PROJECT_DIR$/src/com/ygsoft/smallTool/frameConst/ToolTypeConst.java" />
+        <option value="$PROJECT_DIR$/src/com/ygsoft/createDapFile/fileType/AbstractQueryAppServiceFileUtils.java" />
+        <option value="$PROJECT_DIR$/src/com/ygsoft/smallTool/loopFileUtil/a.java" />
+        <option value="$PROJECT_DIR$/src/com/ygsoft/test/loopFileUtil/TestMain.java" />
+        <option value="$PROJECT_DIR$/src/com/ygsoft/test/loopFileUtil/fileConst/SubsCssPathConst.java" />
+        <option value="$PROJECT_DIR$/src/com/ygsoft/test/loopFileUtil/LoopFileUtilTest.java" />
+        <option value="$PROJECT_DIR$/src/com/ygsoft/test/loopFileUtil/SubsCssPath.java" />
         <option value="$PROJECT_DIR$/src/com/ygsoft/smallTool/frameConst/ExampleConst.java" />
+        <option value="$PROJECT_DIR$/src/com/ygsoft/smallTool/loopFileUtil/LoopFileUtil.java" />
+        <option value="$PROJECT_DIR$/src/com/ygsoft/test/testFile/financialProofQuery.js" />
+        <option value="$PROJECT_DIR$/src/com/ygsoft/test/testFile/financialProofQuery_ui3.html" />
+        <option value="$PROJECT_DIR$/src/com/ygsoft/test/testFile/mult/financialProofQuery_ui3.html" />
       </list>
     </option>
   </component>
@@ -322,6 +341,26 @@
     <option name="x" value="-20" />
     <option name="width" value="1400" />
     <option name="height" value="1000" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State />
+          <State>
+            <id>Declaration redundancyJava</id>
+          </State>
+          <State>
+            <id>Java</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>unused</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -331,8 +370,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -343,49 +382,12 @@
             <path>
               <item name="smallUtils" type="b2602c69:ProjectViewProjectNode" />
               <item name="smallUtils" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="smallUtils" type="b2602c69:ProjectViewProjectNode" />
               <item name="smallUtils" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="run" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="smallUtils" type="b2602c69:ProjectViewProjectNode" />
-              <item name="smallUtils" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="buildUtil" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="smallUtils" type="b2602c69:ProjectViewProjectNode" />
-              <item name="smallUtils" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="frameConst" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="smallUtils" type="b2602c69:ProjectViewProjectNode" />
-              <item name="smallUtils" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="loopFileUtil" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="smallUtils" type="b2602c69:ProjectViewProjectNode" />
-              <item name="smallUtils" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="run" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="smallUtils" type="b2602c69:ProjectViewProjectNode" />
-              <item name="smallUtils" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="loopFileUtil" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="smallUtils" type="b2602c69:ProjectViewProjectNode" />
-              <item name="smallUtils" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="fileConst" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="smallUtils" type="b2602c69:ProjectViewProjectNode" />
@@ -400,15 +402,19 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../createDapFileUtil" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="Template Data Languages" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.ygsoft.smallTool.loopFileUtil" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\ideaworkspace\smallUtils\src\com\ygsoft\test\testFile" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -452,18 +458,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ygsoft.test.loopFileUtil.TestMain" />
+      <module name="smallUtils" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.App" />
       <item itemvalue="Application.Run" />
       <item itemvalue="Application.DapRun" />
       <item itemvalue="Application.SmallUtilRun" />
+      <item itemvalue="Application.TestMain" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.SmallUtilRun" />
+        <item itemvalue="Application.TestMain" />
         <item itemvalue="Application.Run" />
         <item itemvalue="Application.DapRun" />
-        <item itemvalue="Application.App" />
         <item itemvalue="Application.App" />
       </list>
     </recent_temporary>
@@ -482,25 +496,27 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49750414" visible="true" weight="0.23177083" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49750414" visible="true" weight="0.1913646" />
       <window_info id="Structure" order="1" sideWeight="0.5024958" side_tool="true" weight="0.18869936" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="4" sideWeight="0.50248754" side_tool="true" weight="0.18869936" />
+      <window_info anchor="bottom" id="Inspection Results" sideWeight="0.4968017" weight="0.32998884" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.496875" weight="0.3297062" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49739584" weight="0.39825898" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4953125" weight="0.3199554" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49413645" weight="0.40802675" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49946696" weight="0.32998884" />
-      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49520257" weight="0.3277592" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.503125" side_tool="true" visible="true" weight="0.3297062" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.4914712" visible="true" weight="0.32664436" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50586355" side_tool="true" weight="0.40802675" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49733475" weight="0.32998884" />
-      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49791667" weight="0.3297062" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49520257" weight="0.32887402" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" visible="true" weight="0.17239584" />
+      <window_info anchor="right" id="Ant Build" order="1" visible="true" weight="0.17643923" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Palette&#9;" order="4" />
@@ -541,7 +557,9 @@
     <MESSAGE value="生成dap代码工具完善" />
     <MESSAGE value="补充提交1" />
     <MESSAGE value="补充提交" />
-    <option name="LAST_COMMIT_MESSAGE" value="补充提交" />
+    <MESSAGE value="扫描文件工具" />
+    <MESSAGE value="测试文件" />
+    <option name="LAST_COMMIT_MESSAGE" value="测试文件" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -558,25 +576,12 @@
           <properties />
           <option name="timeStamp" value="8" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/ygsoft/smallTool/frame/ToolFrame.java</url>
-          <line>412</line>
-          <properties />
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/ygsoft/smallTool/frame/ToolFrame.java</url>
-          <line>416</line>
-          <properties />
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
-        <watch expression="packageStr.substring(32)" language="JAVA" />
         <watch expression="&quot;111,222,333&quot;.split(&quot;,&quot;,2)" language="JAVA" />
-        <watch expression="fileTypeFilter[i].trim().replace(&quot;*&quot;, &quot;&quot;)" />
+        <watch expression="file2.getName()" />
       </configuration>
     </watches-manager>
   </component>
@@ -586,6 +591,11 @@
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
+      <expression>
+        <expression-string>line.indexOf(&quot;\&quot;&quot;, firQuotes+1)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>&quot;111,222,333&quot;.split(&quot;,&quot;,2)</expression-string>
         <language-id>JAVA</language-id>
@@ -626,26 +636,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ygsoft/smallTool/buildCodeUtil/BuildCodesUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/Test/TestDapFileAbstractDkllwhQueryAppService.java" />
     <entry file="file://$PROJECT_DIR$/src/com/ygsoft/createDapFile/testFile/AbstractDkllwhQueryAppService.java" />
     <entry file="file://$PROJECT_DIR$/src/com/ygsoft/createDapFile/testFile/DkllwhQueryAppService.java" />
     <entry file="file://$PROJECT_DIR$/src/com/ygsoft/createDapFile/testFile/DkllwhQueryController.java" />
     <entry file="file://$PROJECT_DIR$/src/com/ygsoft/smallTool/run/aaa.java" />
     <entry file="file://$PROJECT_DIR$/src/com/ygsoft/createDapFile/fileConst/aaa.java" />
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="58" column="25" selection-start-line="58" selection-start-column="25" selection-end-line="58" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ygsoft/createDapFile/fileConst/CreateFileConst.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -707,16 +703,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ygsoft/createDapFile/fileType/AbstractQueryAppServiceFileUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="725">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/QueryFacade.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -752,13 +738,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ygsoft/createDapFile/testFile/appservice/AbstractQueryFacadeQueryAppService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ygsoft/createDapFile/testFile/appservice/AbstractQueryFacadeQueryAppService.java" />
     <entry file="file://$PROJECT_DIR$/src/com/ygsoft/smallTool/dealStringUtil/TransStringUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -766,73 +746,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ygsoft/test/loopFileUtil/SubsCssPath.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="875">
-          <caret line="87" column="48" lean-forward="true" selection-start-line="87" selection-start-column="48" selection-end-line="87" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ygsoft/test/loopFileUtil/fileConst/SubsCssPathConst.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="13" column="7" lean-forward="true" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ygsoft/createDapFile/run/DapRun.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ygsoft/smallTool/run/SmallUtilRun.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-          <folding>
-            <element signature="e#175#176#0" expanded="true" />
-            <element signature="e#206#207#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ygsoft/smallTool/frame/ToolFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="188" column="14" lean-forward="true" selection-start-line="188" selection-start-column="14" selection-end-line="188" selection-end-column="14" />
-          <folding>
-            <element signature="e#13673#13674#0" expanded="true" />
-            <element signature="e#13698#13699#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ygsoft/test/loopFileUtil/LoopFileUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="20" column="17" lean-forward="true" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ygsoft/test/loopFileUtil/run/LoopFileRun.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="e#221#222#0" expanded="true" />
-            <element signature="e#254#255#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ygsoft/framework/buildUtil/BuildParamsMap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
+        <state relative-caret-position="675">
           <caret line="30" column="41" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -840,27 +756,189 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ygsoft/smallTool/loopFileUtil/LoopFileUtil.java">
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="44" column="4" lean-forward="true" selection-start-line="44" selection-start-column="4" selection-end-line="44" selection-end-column="4" />
+        <state relative-caret-position="1350">
+          <caret line="54" column="17" lean-forward="true" selection-start-line="54" selection-start-column="17" selection-end-line="54" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ygsoft/smallTool/buildCodeUtil/BuildCodesUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="983" column="22" selection-start-line="983" selection-start-column="22" selection-end-line="983" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ygsoft/createDapFile/fileType/AbstractQueryAppServiceFileUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="39" lean-forward="true" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ygsoft/test/loopFileUtil/run/LoopFileRun.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <element signature="e#221#222#0" expanded="true" />
+            <element signature="e#254#255#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ygsoft/createDapFile/run/DapRun.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ygsoft/smallTool/loopFileUtil/a.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="11" column="3" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ygsoft/test/loopFileUtil/TestMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="26" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ygsoft/smallTool/frameConst/ToolTypeConst.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="41">
-          <caret line="31" column="4" lean-forward="true" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
+        <state relative-caret-position="66">
+          <caret line="46" column="33" lean-forward="true" selection-start-line="46" selection-start-column="33" selection-end-line="46" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ygsoft/test/testFile/invoiceQuery.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="131" column="8" lean-forward="true" selection-start-line="131" selection-start-column="8" selection-end-line="131" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ygsoft/test/loopFileUtil/fileConst/SubsCssPathConst.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="36" column="7" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ygsoft/test/loopFileUtil/SubsCssPath.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ygsoft/test/loopFileUtil/LoopFileUtilTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ygsoft/smallTool/frameConst/ExampleConst.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="80" column="47" selection-start-line="80" selection-start-column="47" selection-end-line="80" selection-end-column="47" />
+        <state relative-caret-position="267">
+          <caret line="87" column="38" selection-start-line="87" selection-start-column="38" selection-end-line="87" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ygsoft/test/testFile/financialProofQuery - 副本.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="9" lean-forward="true" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ygsoft/test/testFile/financialProofQuery_ui3 - 副本 (2).html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="6" lean-forward="true" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ygsoft/test/testFile/financialProofQuery_ui3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="102" selection-start-line="102" selection-end-line="104" selection-end-column="69" />
           <folding>
-            <element signature="e#416#434#0" expanded="true" />
-            <element signature="e#554#572#0" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#td#3;n#tr#0;n#table#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#tr#1;n#table#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#td#1;n#tr#1;n#table#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#td#3;n#tr#1;n#table#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#td#5;n#tr#1;n#table#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#td#7;n#tr#1;n#table#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ygsoft/test/testFile/mult/financialProofQuery_ui3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="102" column="38" selection-start-line="102" selection-start-column="38" selection-end-line="102" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ygsoft/test/testFile/financialProofQuery_ui3 - 副本.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="98" column="18" selection-start-line="98" selection-start-column="18" selection-end-line="98" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ygsoft/test/testFile/financialProofQuery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="60" column="22" selection-start-line="60" selection-start-column="22" selection-end-line="60" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ygsoft/smallTool/loopFileUtil/LoopFileUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="174" column="58" selection-start-line="174" selection-start-column="58" selection-end-line="174" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#6694#6695#0" expanded="true" />
+            <element signature="e#6728#6729#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ygsoft/smallTool/frame/ToolFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="398" column="9" selection-start-line="398" selection-start-column="9" selection-end-line="398" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ygsoft/smallTool/run/SmallUtilRun.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="50" lean-forward="true" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
+          <folding>
+            <element signature="e#206#207#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -871,10 +949,12 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
+          <last-edited>smallUtils:jar</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -922,6 +1002,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

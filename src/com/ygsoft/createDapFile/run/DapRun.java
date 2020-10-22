@@ -6,7 +6,7 @@ import com.ygsoft.createDapFile.fileType.AbstractQueryFacadeFileUtils;
 import com.ygsoft.createDapFile.fileType.AppServiceFileUtils;
 import com.ygsoft.createDapFile.fileType.QueryControllerFileUtils;
 import com.ygsoft.createDapFile.fileType.QueryFacadeFileUtils;
-import com.ygsoft.test.loopFileUtil.LoopFileUtil;
+import com.ygsoft.test.loopFileUtil.LoopFileUtilTest;
 
 import java.util.List;
 
@@ -17,7 +17,7 @@ import java.util.List;
 public class DapRun {
     public static void main( String[] args ) {
     	final String contextPath = "D:\\ideaworkspace\\constructfinance\\fms-project-finacial-mgt\\gmp-fm-constructfinance-app\\com\\ygsoft";
-		final List<String> contextNameList = LoopFileUtil.getFileNameList(contextPath);
+		final List<String> contextNameList = LoopFileUtilTest.getFileNameList(contextPath);
     	for (int i = 0; i < contextNameList.size(); i++) {
 //			final String preName = contextNameList.get(i).replaceAll("QueryContext.java", "").replaceAll("Context.java", "");
 			final String preName = contextNameList.get(i).replaceAll("FileUtils.java", "").replaceAll("FileUtils.java", "");

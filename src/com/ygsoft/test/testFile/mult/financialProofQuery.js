@@ -4,6 +4,7 @@
  * 作者：LiuHui6
  * 日期：2017-06-26
  */
+C5.use(["ecp.start"], function(){
 require([
     "ecp.osgi.service", //ecp服务
     "jjgk.base", //基类
@@ -308,4 +309,5 @@ function ($ecp, $base, queryInit, PageLoading, $ecpUtils, $winUtil, cstrUtil, $d
     var financialProofController = new controller();
     financialProofController.initPage();
 
+});
 });
