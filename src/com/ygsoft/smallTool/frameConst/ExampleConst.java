@@ -90,6 +90,15 @@ public final class ExampleConst {
                 + "showAbsolutePath: true\n",
                 ""
         });
+        LOOPFILEEXAMPLEMAP.put("3", new String[]{
+                "filePath: D:\\ideaworkspace\\smallUtils\\src\\com\\ygsoft\\test\\testFile\n"
+                + "fileNameFilter: \n"
+                + "fileTypeFilter: *.ini\n"
+                + "showAbsolutePath: true\n"
+                + "sourceStr: bidding\n"
+                + "targetStr: contract\n",
+                ""
+        });
     }
 
 

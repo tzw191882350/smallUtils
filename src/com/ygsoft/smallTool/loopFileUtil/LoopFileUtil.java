@@ -51,30 +51,53 @@ public class LoopFileUtil {
     private static boolean isModify;
 	/**
 	 * 循环文件.
-	 * @param methodType,params 方法类型和参数
+	 * @param toolTypeStr,params 方法类型和参数
 	 */
-	public static String loopFile(final String methodType, final String params) {
-		initParam(methodType, params);
-		traverseFolder2(paramMap.get("filePath"));
-//		System.out.println("所有修改的文件:" + SubsCssPathConst.modifyFileName.toString());
-        result.append("共修改文件:" + writeFileCounts + "个\n");
-		result.append("共匹配文件:" + compareFileCounts + "个\n");
-		result.append("共扫描文件:" + viewFileCounts + "个");
+	public static String loopFile(final String toolTypeStr, final String params) {
+		initParam(toolTypeStr, params);
+		final String checkResult = checkParam();
+		if ("true".equals(checkResult)) {
+			traverseFolder2(paramMap.get("filePath"));
+//			System.out.println("所有修改的文件:" + SubsCssPathConst.modifyFileName.toString());
+			result.append("共修改文件:" + writeFileCounts + "个\n");
+			result.append("共匹配文件:" + compareFileCounts + "个\n");
+			result.append("共扫描文件:" + viewFileCounts + "个");
+		} else {
+			result.append(checkResult);
+		}
 		return result.toString();
 	}
 
 	/**
 	 * 初始化变量
 	 */
-	private static void initParam(final String methodType, final String params) {
+	private static void initParam(final String toolTypeStr, final String params) {
 		result = new StringBuilder();
 		info = new StringBuilder();
-		type = methodType;
+		type = toolTypeStr;
 		paramMap = BuildParamsMap.strToMap(params);
 		viewFileCounts = 0;
         writeFileCounts = 0;
 		compareFileCounts = 0;
         isModify = false;
+	}
+
+	/**
+	 * 检查参数是否正确
+	 */
+	private static String checkParam() {
+		switch (Integer.parseInt(type)) {
+			case 3:
+				final String[] sourceStrArr = paramMap.get("sourceStr").split(",");
+				final String[] targetStrArr = paramMap.get("targetStr").split(",");
+				if (sourceStrArr.length != targetStrArr.length) {
+					return "替换字符串和源字符串个数不匹配";
+				}
+				return "";
+			default:
+				System.out.println();
+		}
+		return "true";
 	}
 	
 	/**
@@ -126,13 +149,15 @@ public class LoopFileUtil {
 		final String filePath = file2.getAbsolutePath();
 		com.ygsoft.loopFileUtil.fileConst.SubsCssPathConst.title = "";
 		com.ygsoft.loopFileUtil.fileConst.SubsCssPathConst.isComments = false;
-		final int typeInt = Integer.parseInt(type);
-		switch (typeInt) {
+		switch (Integer.parseInt(type)) {
 			case 1:
 				findAllCompareFile(filePath, file2);
 				break;
 			case 2:
 				updateFileByDap(file2, bufferedReader);
+				break;
+			case 3:
+				replaceFileContent(file2, bufferedReader);
 				break;
 			default:
 				System.out.println();
@@ -160,30 +185,57 @@ public class LoopFileUtil {
 	 * @throws IOException 读写文件异常
 	 */
 	private static void updateFileByDap(final File file2, final BufferedReader bufferedReader) throws IOException {
-        // 文件类型和文件名符合条件才改
+		// 文件类型和文件名符合条件才改
 		if (filterFileNameAndType(file2)) {
-		    // 文件内容
-		    final StringBuilder fileContent = new StringBuilder();
+			// 文件内容
+			final StringBuilder fileContent = new StringBuilder();
 			while ((line = bufferedReader.readLine()) != null) {
-			    if (file2.getName().contains(".html")) {
-                    updateDapHtml(fileContent);
-                } else if(file2.getName().contains(".js")) {
-			        if  (line.contains("C5.use(")) {
-			            break;
-                    }
-                    if (line.contains("require(")) {
-                        isModify = true;
-                        appendLn(fileContent, "C5.use([\"ecp.start\"], function(){");
-                        fileContent.append(line);
-                    } else {
-                        fileContent.append(line);
-                    }
-                }
+				if (file2.getName().contains(".html")) {
+					updateDapHtml(fileContent);
+				} else if(file2.getName().contains(".js")) {
+					if  (line.contains("C5.use(")) {
+						break;
+					}
+					if (line.contains("require(")) {
+						isModify = true;
+						appendLn(fileContent, "C5.use([\"ecp.start\"], function(){");
+						fileContent.append(line);
+					} else {
+						fileContent.append(line);
+					}
+				}
 				fileContent.append("\n");
 			}
-            if(file2.getName().contains(".js") && isModify) {
-                fileContent.append("});");
-            }
+			if(file2.getName().contains(".js") && isModify) {
+				fileContent.append("});");
+			}
+			write(fileContent.toString(), file2);
+		}
+	}
+
+	/**
+	 * 根据条件替换指定文件内容.
+	 * @throws IOException 读写文件异常
+	 */
+	private static void replaceFileContent(final File file2, final BufferedReader bufferedReader) throws IOException {
+		// 文件类型和文件名符合条件才改
+		if (filterFileNameAndType(file2)) {
+			// 文件内容
+			final StringBuilder fileContent = new StringBuilder();
+			final String[] sourceStrArr = paramMap.get("sourceStr").split(",");
+			final String[] targetStrArr = paramMap.get("targetStr").split(",");
+			final int size = sourceStrArr.length;
+			while ((line = bufferedReader.readLine()) != null) {
+				for (int i = 0; i < size; i++) {
+					final String sourceStr = sourceStrArr[i];
+					if (line.contains(sourceStr)) {
+						isModify = true;
+						appendLn(fileContent, line.replaceAll(sourceStr, targetStrArr[i]));
+					} else {
+						appendLn(fileContent, line);
+					}
+				}
+			}
 			write(fileContent.toString(), file2);
 		}
 	}

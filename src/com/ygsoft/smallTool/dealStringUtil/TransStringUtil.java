@@ -30,6 +30,12 @@ public class TransStringUtil {
             case 4:
                 result = mergeMoreLineFlexible(str);
                 break;
+            case 5:
+                result = clearRepeatLine(str);
+                break;
+            case 6:
+                result = filterLineByContidion(str);
+                break;
             default:
                 print("");
         }
@@ -78,6 +84,50 @@ public class TransStringUtil {
             } else {
                 result.append(line);
 //        		result.append("\\n");
+            }
+        }
+        return result.toString();
+    }
+
+    /**
+     * 按行去重.
+     */
+    public static String clearRepeatLine(final String str) {
+        final StringBuilder result = new StringBuilder();
+        final String[] strArr = str.split("\n");
+        final List<String> lines = new ArrayList<String>();
+        final StringBuilder noRepearLine = new StringBuilder();
+        for (int i = 0; i < strArr.length; i++) {
+            String line = strArr[i].trim();
+            if (!lines.contains(line)) {
+                lines.add(line);
+                appendAndLn(noRepearLine, line);
+            }
+        }
+        if (!lines.isEmpty()) {
+            appendAndLn(result, "不重复的行为:");
+        } else {
+            appendAndLn(result, "没有重复的行:");
+        }
+        result.append(noRepearLine);
+        return result.toString();
+    }
+
+    /**
+     * 过滤出包含指定内容的行.
+     */
+    public static String filterLineByContidion(final String str) {
+        final StringBuilder result = new StringBuilder();
+        final String[] strArr = str.split("\n");
+        String flag = "";
+        for (int i = 0; i < strArr.length; i++) {
+            String line = strArr[i].trim();
+            if (i == 0 && line.startsWith("flag:")) {
+                flag = line.split(":")[1];
+            } else {
+                if (line.contains(flag)) {
+                    appendAndLn(result, line);
+                }
             }
         }
         return result.toString();

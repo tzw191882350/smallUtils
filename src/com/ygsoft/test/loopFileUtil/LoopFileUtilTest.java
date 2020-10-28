@@ -1,7 +1,5 @@
 package com.ygsoft.test.loopFileUtil;
 
-
-
 import java.io.*;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
